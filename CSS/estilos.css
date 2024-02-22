@@ -1,0 +1,98 @@
+/*CSS de la pagina de inicio*/
+/*=========================================================*/
+.cabecera{
+ text-align: center;
+ 
+}
+
+body{
+    background-color: #f0e8d4;
+    
+
+}
+
+.Lista-Direcciones /* Lo utilizamos para quitarle el estilo de numeros o puntos a las listas en uso*/
+{
+    list-style-type: none;
+}
+
+
+ .barra-navegación{
+  text-align: center;
+ }
+
+.Links-navegación {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+} 
+  .Links-navegación li a { /* Le da formato de cajas a la lista de la barra de navegacion*/
+    display: flex;
+    color: black;
+    text-align:justify;
+    padding: 10px;
+    border: 1px solid black;
+    
+  }
+  
+  .Links-navegación li a:hover {
+    transition-duration: 1s  ;
+    background-color: black;
+    color: white;
+  }
+
+  
+  .Coche_camara_carretera{
+    width: 500px;
+    height: auto;
+    background: linear-gradient(to bottom,black,#f0e8d4 );
+    border: 2px solid #333; 
+    padding: 40px; /* Relleno interno del recuadro */
+  }
+  .Coches_carretera{
+    float: right;
+    width: 500px;
+    height: auto;
+    background: linear-gradient(to bottom,#f0e8d4,#072355 );
+    border: 2px solid #333; 
+    padding: 40px; /* Relleno interno del recuadro */
+  }
+  .texto-central{
+
+    text-align: center;
+  }
+  .recuadro{
+    display: flex;
+    
+  }
+.titulo{
+   font-size: 25px;
+   text-decoration: underline;
+   
+
+}
+  /*
+  
+  @media screen and (max-width: 600px) {
+    .Links-navegacion li {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .Idiomas a {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /*=======================================================*/
+  
+  /*CSS de la pagina SOBRE NOSTROS*/
+.cabecera_sobre-nostros{
+  text-align: center;
+}
+
+
+  /*=======================================================*/
