@@ -1,11 +1,4 @@
 
-.roboto-medium {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-
 
 
 /*CSS de la pagina de inicio*/
@@ -16,16 +9,17 @@
 }
 
 body{
-    background-color: #f0e8d4;
+  font-family: "Roboto", sans-serif;
+  background-color: #f0e8d4;
+  margin: 20px;
     
-
 }
 
-.Lista-Direcciones /* Lo utilizamos para quitarle el estilo de numeros o puntos a las listas en uso*/
+.Lista-Direcciones   /* Lo utilizamos para quitarle el estilo de numeros o puntos a las listas en uso*/
 {
-    list-style-type: none;
+  list-style: none;
+  
 }
-
 
  .barra-navegación{
   text-align: center;
@@ -38,11 +32,9 @@ body{
   overflow: hidden;
   background-color: #333;
 } 
-li {
-  float: left;
-}
 
 li a {
+  float: left;
   display: block;
   color: white;
   text-align: center;
@@ -56,25 +48,21 @@ li a:hover {
 
   
 .Coche_camara_carretera{
-    width: 500px;
-    height: auto;
+   
     background: linear-gradient(to bottom,black,#f0e8d4 );
-     
     padding: 40px; /* Relleno interno del recuadro */
 }
 
 .Coches_carretera{
     float: right;
-    width: 500px;
-    height: auto;
     background: linear-gradient(to bottom,#f0e8d4,#072355 );
-    
     padding: 40px; /* Relleno interno del recuadro */
 }
 
 .texto-central{
 
     text-align: center;
+    margin: 80px;
 }
 
 .recuadro{
@@ -88,6 +76,36 @@ li a:hover {
    
 
 }
+
+.mapa{
+position: absolute;
+right: 15%;
+
+}
+
+ footer{ /*Para centrar el contenido, tanto la lista como el mapa*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.mapa {
+  width: 50%;
+  height: 200px; /* Ajusta esto según necesites */
+  border: 0;
+}
+
+@media (max-width: 768px) {
+  footer {
+      padding: 20px;
+  }
+
+  .mapa {
+      height: 150px; /* Más pequeño en dispositivos móviles */
+  }
+}
+
+
   /*
   
   @media screen and (max-width: 600px) {
