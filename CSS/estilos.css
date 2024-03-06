@@ -21,8 +21,9 @@ body{
   
 }
 
- .barra-navegación{
-  text-align: center;
+ div.barra-navegación{
+  position: sticky;
+  top: 0;
  }
 
 .Links-navegación {
@@ -31,6 +32,7 @@ body{
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  
 } 
 
 li a {
@@ -46,34 +48,50 @@ li a:hover {
   background-color: #111;
 }
 
-  
-.Coche_camara_carretera{
-   
-    background: linear-gradient(to bottom,black,#f0e8d4 );
-    padding: 40px; /* Relleno interno del recuadro */
-}
+ 
 
-.Coches_carretera{
-    float: right;
-    background: linear-gradient(to bottom,#f0e8d4,#072355 );
-    padding: 40px; /* Relleno interno del recuadro */
-}
+.div1{
+margin-top: 20px;
+display: flex;
+align-items: center;
 
+}
 .texto-central{
-
-    text-align: center;
     margin: 80px;
-}
-
-.recuadro{
-    display: flex;
+    margin-top: 5px;
     
 }
+
+.Coche_camara_carretera{
+
+  background: linear-gradient(to bottom,black,#f0e8d4 );
+  padding: 40px; /* Relleno interno del recuadro */
+}
+
+
+.div2{
+margin-top: 20px;
+display: flex;
+align-items: center;
+}
+.Coches_carretera{
+  /* float: right;*/
+   background: linear-gradient(to bottom,#f0e8d4,#072355 );
+   padding: 40px; /* Relleno interno del recuadro */
+}
+
+.titulo2{
+  margin-left: 80px;
+  text-decoration: underline;
+}
+
+
+
 
 .titulo{
    font-size: 25px;
    text-decoration: underline;
-   
+      
 
 }
 
@@ -83,16 +101,17 @@ right: 15%;
 
 }
 
- footer{ /*Para centrar el contenido, tanto la lista como el mapa*/
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+footer{ /*Para centrar el contenido, tanto la lista como el mapa*/
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ text-align: center;
 }
 .mapa {
   width: 50%;
   height: 200px; /* Ajusta esto según necesites */
   border: 0;
+    
 }
 
 @media (max-width: 768px) {
