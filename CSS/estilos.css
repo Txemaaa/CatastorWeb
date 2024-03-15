@@ -1,6 +1,3 @@
-
-
-
 /*CSS de la pagina de inicio*/
 /*=========================================================*/
 .cabecera{
@@ -288,6 +285,7 @@ legend {
   
 }
 
+/*CODIGO PARA LA PAGINA SOBRE NOSOTROS*/
 .posicion-imagen
 {
   display: flex;
