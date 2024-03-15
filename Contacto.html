@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon-32x32.png" type="image/png">
     <title>Contacto</title>
     <link rel="stylesheet" href="CSS/estilos.css">
 </head>
@@ -13,41 +14,39 @@
 
 <body>
     
-    <div>
+    <nav class="barra-navegación">
         <ul class="Links-navegación">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="sobre-nostros.html">Sobre nosotros</a></li>
             <li><a href="Productos.html">Productos</a></li>
             <li><a href="Contacto.html">Contactanos</a></li>
             <li><a href="index.html"><img src="img/ES.png" alt="Español">ES</a></li>    
-            <li><a href="index.html"><img src="img/EUS.png" alt="Euskera">EUS</a></li> 
-            <li><a href="index.html"><img src="img/ENG.png" alt="Inglés">ENG</a></li>    
-                
-                
-               <!-- <optgroup>
-                        <option value="ES" > <img src="img/ES.webp" alt="Español">ES</option>
-                        <option value="EUS"> <img src="img/EUS.png" alt="Esukera">EUS</option>
-                        <option value="ENG">ENG</option>
-                    </optgroup>--> 
+            <li><a href="index.html"><img src="img/EUS.png" alt="Euskera">EUS</a></li>     
         </ul>
-    <div>
+    </nav>
 
 
-    <form action="#" method="get"></form>
-        <label for="campo-nombre">Nombre:</label><br>
-        <input id= "campo-nombre" type="text" name="Nombre"
-         placeholder="Escribe tu nombre"><br> <!--Etiqueta dentro del placehorlder, estilo ayuda para saber donde escribir-->
-         <input type="submit" value="Enviar">
+
 
 
     <form >
         <fieldset>
-            <legend>Datos personales:</legend>
-            Nombre: <input type="text"> <br>
-            <p>Eres Socio?</p>
-            <input type="radio" name=" Socio"> Si soy socio   <input type="radio" name="No Socio"> No, no soy socio <br> <br>
-            Email: <input type="text"> <br> <br>
-            Contraseña: <input type="text"> <br>
+            <legend> Datos personales </legend>
+            <div class="Datos-personales">
+                Nombre:<input type="text" name="Nombre" placeholder="Escriba su nombre">
+            </div>
+
+            <div class="Datos-personales">
+                Apellidos: <input type="text" name="Apellidos" placeholder="Escriba sus apellidos">
+            </div>
+
+            <div class="Datos-personales">
+                Tlfn: <input type="tel" name="Telefono" placeholder="Escriba su numero de telefono">
+            </div>
+            <div class="Datos-personales">
+                Email: <input type="email" name="Email" placeholder=" Escriba su Email"> 
+            </div>
+            <input type="submit" value="Enviar">
         </fieldset>
 
         <fieldset>
@@ -57,16 +56,44 @@
                 <option value="Mayor de 18">Mayor de 18</option> <!--Opciones de la lista-->
                 <option value="Menos de 18">Menor de 18</option>    
             </optgroup>
-        </select><br>
+        </select>
         <p>Seleccione la fecha y hora de reserva:</p> 
         <input type="date" name="dd/mm/aaaa"> <input type="time" name="-- : --"><br><br>
         
         <input name=""type="text"  id="Campo-comentarios" name="Comentarios" placeholder="Comentarios">
-            
+        <input type="submit" value="Enviar">
 
         </fieldset>
 
     </form>
-    
+    <footer>
+        <div>
+            <ol class="Lista-Direcciones">
+                <li><strong>Direccion:</strong></li>
+                <li>PI.Porticada, 2</li>
+                <li>01015 Vitoria-Gasteiz, Álava</li>
+            </ol>
+          
+            <ol class="Lista-Direcciones">
+                <li><strong>Horarios:</strong></li>
+                <li>Lunes a sabado</li>
+                <li>De 8:00 a 14:00</li>
+            </ol>
+          
+            <ol class="Lista-Direcciones">
+                <li><strong>Telefono:</strong></li>
+                <li>945456789</li>
+            </ol>
+            
+        </div>
+        <div >
+            <iframe
+            class="mapa"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.4895326810047!2d-2.7054275233845404!3d42.84139560455576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4fc1f9e4a32cf1%3A0x15c92b1c429eb4ba!2sPl.%20Porticada%2C%202%2C%2001015%20Vitoria-Gasteiz%2C%20%C3%81lava!5e0!3m2!1ses!2ses!4v1708085850538!5m2!1ses!2ses"
+                style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+        </div> 
+        </footer>
 </body>
 </html>
